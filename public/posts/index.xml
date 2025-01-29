@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts :: Spacemacs</title>
+    <link>http://localhost:1313/posts/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1 - Spacemacs</title>
+      <link>http://localhost:1313/posts/spacemacs/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/spacemacs/index.html</guid>
+      <description>https://out-of-cheese-error.netlify.app/spacemacs-config&#xA;Core Table 1: Shortcut keys for compilation Keys Function Description SPC c k kill-compilation Kill current compilation SPC SPC M-x equivalent SPC h d v Find a variables value and purpose SPC h d k Find a key bindings function and purpose Searching TEST Table 2: Shortcut keys for searching Keys Function Description * Highlight symbol in buffer (transient) SPC s p search for string in all files SPC / search for string in all files SPC s P search for object at point in all files SPC * search for object at point in all files SPC p f find a file in project Global Search and Replace Perform a search using helm (e.</description>
+    </item>
+    <item>
+      <title>Cowork Company</title>
+      <link>http://localhost:1313/posts/cowork/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/cowork/index.html</guid>
+      <description>Cowork Company Concept Coworking for engineers and other tech types. Those who want a quiet environment with minimal to no distractions. No noise, no people wandering in &amp; out. Focus on security &amp; privacy.&#xA;Idea is to replicate the comfortable home office feeling where no one bothers you, no one can see your network traffic, no one sees your screen.&#xA;Yet food and drink is a short distance away.&#xA;Security &amp; Privacy Focused Private LAN.</description>
+    </item>
+    <item>
+      <title>Crypto Notes</title>
+      <link>http://localhost:1313/posts/crypto-notes/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/crypto-notes/index.html</guid>
+      <description>https://www.youtube.com/watch?v=6qBdrtZYBbc&#xA;Arbitrum block time 0.25s&#xA;Optimistic Rollups: Simpler You can prove one way, you can prove another way (correctness). Question is, what does it cost to prove? Can a regular user with regular machine participate? Optimistc Rollups a regular use can participate. This is not true for zk&#xA;Upgrades:&#xA;BOLD Next gen proving tech, still optimistic. Makes proving fully permissionless. On testnet debated by DOA Stylus: A multi-VM allowing smart contracts to run in any language.</description>
+    </item>
+    <item>
+      <title>Developing in Spacemacs</title>
+      <link>http://localhost:1313/posts/spacemacs-development/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/spacemacs-development/index.html</guid>
+      <description>Diffing Table 1: Shortcut keys Diffing Keys Description M-0 toggle focus treemacs SPC f t toggle treemacs visibility SPC p t toggle treemacs project visibility SPC p a switch between file and test file Shortcuts Table 2: Shortcut keys for development Keys Description M-0 toggle focus treemacs SPC f t toggle treemacs visibility SPC p t toggle treemacs project visibility SPC p a switch between file and test file Extra Treemacs Binding Description M-0 Selected the treemacs window.</description>
+    </item>
+    <item>
+      <title>Elisp</title>
+      <link>http://localhost:1313/posts/elisp/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/elisp/index.html</guid>
+      <description>Playing with elisp , e c - eval function&#xA;Keys Function Description , e c eval current line , e f eval current function</description>
+    </item>
+    <item>
+      <title>Golang &#43; Spacemacs</title>
+      <link>http://localhost:1313/posts/spacemacs-go/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/spacemacs-go/index.html</guid>
+      <description>Link Golang Workflow on Youtube Shortcuts Table 1: Go Keys Keys Function Description , t t run current test , t p run all tests in file , t g f generate tests for exported functions , t g F generate tests for all functions , r r lsp-rename Renames object , h h godoc-at-point K evil-smart-doc-lookup, seems to call godoc-at-point in go-mode Save Hook Running lsp-format-buffer and lsp-organize-imports are two functions that you’ll want to run so often they should be save hooks.</description>
+    </item>
+    <item>
+      <title>Hugo</title>
+      <link>http://localhost:1313/posts/hugo/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/hugo/index.html</guid>
+      <description>https://gohugo.io/getting-started/quick-start/ https://ox-hugo.scripter.co/doc/source-blocks/&#xA;hugo new site quickstart cd quickstart git init git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke echo theme = \&#34;ananke\&#34; &gt;&gt; config.toml&#xA;hugo new posts/title.md&#xA;ls | headOrg Mode Shortcuts Create hugo post , e e H h&#xA;snippet sb source block Using yassnippet Hugo Export Save Hook To automatically export the current buffer on save, put this somewhere in your init:&#xA;(add-hook &#39;after-save-hook &#39;hugo-save-hook)and define this:&#xA;(defun hugo-save-hook () (when (string-match &#34;org/howto&#34; buffer-file-name) (org-hugo-export-to-md)))org/howto is any string in the buffer-file-name you want to trigger on.</description>
+    </item>
+    <item>
+      <title>Layouts, Perspectives &amp; Projects</title>
+      <link>http://localhost:1313/posts/layouts/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/layouts/index.html</guid>
+      <description>Definitions A layout in Spacemacs is a sub-set of open buffers. It is convenient to use one layout per project. If you do this then you can think of layouts as “project layouts”. A workspace is an arrangement of some number of buffers within a layout. You can think of workspaces as “views into projects”. For example, a workspace is a specific set of buffers related to a task or area of the project.</description>
+    </item>
+    <item>
+      <title>Projectile</title>
+      <link>http://localhost:1313/posts/spacemacs-projectile/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/spacemacs-projectile/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ranger</title>
+      <link>http://localhost:1313/posts/ranger/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ranger/index.html</guid>
+      <description>Inside ranger, you can press 1? for a list of key bindings, 2? for commands and 3? for settings.&#xA;SPC a t r r load ranger</description>
+    </item>
+    <item>
+      <title>Shortcut Keys</title>
+      <link>http://localhost:1313/posts/keys/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/keys/index.html</guid>
+      <description>Keys Spacemacs SPC w p m messages buffer&#xA;SPC x o open link&#xA;SPC c l comment lines&#xA;SPC b Y copy buffer&#xA;C-c . style modes&#xA;SPC p l create project layout SPC p t neotree SPC p p switch project SPC p b buffers in project&#xA;SPC e n next error SPC e p previous error&#xA;SPC l l change/create layout SPC l o custom layouts SPC l a add buffer to layout SPC l b layout buffers SPC l TAB previous layout SPC l s/L save/Load layouts</description>
+    </item>
+    <item>
+      <title>Spacemacs Email</title>
+      <link>http://localhost:1313/posts/dpi/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/dpi/index.html</guid>
+      <description>mu4e fastmail setup Display HTML mails better&#xA;Config file location ~/.config/isyncrc&#xA;mu init --maildir=~/Maildir mu indexKeys Keys u - unmark x - execute marks&#xA;C-j/k Move through messages without focusing</description>
+    </item>
+    <item>
+      <title>Spacemacs Email</title>
+      <link>http://localhost:1313/posts/spacemacs-email/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/spacemacs-email/index.html</guid>
+      <description>mu4e fastmail setup Display HTML mails better&#xA;Config file location ~/.config/isyncrc&#xA;mu init --maildir=~/Maildir mu indexWorkflow bX to go into a search Keys Keys Main View j Jump to maildir folder s Enter a mu find search string (see below) C Compose a new email bx Run bookmark x ; Switch context U Update email and mu database q Quit mu4e&#xA;Message View u - unmark x - execute marks</description>
+    </item>
+    <item>
+      <title>Spacemacs GPT</title>
+      <link>http://localhost:1313/posts/spacemacs-gpt/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/spacemacs-gpt/index.html</guid>
+      <description>Key Function Description SPC u Emacs prefix key. Type this first to modify options Set/modify tags , , Toggle checkbox , , Re-align table , d s org-schedule Add/modify scheduled date. alt h/l to modify date in calendar , s r org-refile , d d org-deadline TAB Collapse tree (toggle) M-o org-insert-heading+org-metaright (new line, new sublevel) C-RET org-insert-heading (new line, same level) S-Right rotate TODO states M-S-RET org-insert-todo-heading When in a plain list, create an entry with a checkbox M-Right/Left Shift tree S-M-Right/Left In org-table, create or delete column SPC a o l store link (store &amp; insert, same as copy &amp; paste) SPC m i l insert link</description>
+    </item>
+    <item>
+      <title>Spacemacs Org Mode</title>
+      <link>http://localhost:1313/posts/spacemacs-org/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/spacemacs-org/index.html</guid>
+      <description>Links:&#xA;https://web.archive.org/web/20210122070120/http://ehneilsen.net/notebook/orgExamples/org-examples.html#sec-2&#xA;https://zzamboni.org/post/beautifying-org-mode-in-emacs/&#xA;https://howardism.org/Technical/Emacs/orgmode-wordprocessor.html&#xA;Using mu4e with org mode https://www.djcbsoftware.nl/code/mu/mu4e/Org_002dmode-links.html&#xA;Can use SPC a o l to capture email link C-c c has been bound to mu4e-org-store-and-capture. Use it on headers or in an email New template has been added to create a todo from an email Capturing Use org-capture to capture something, it will go into refile.org todo marks the new entry with TODO todo from email marks the new entry with TODO and saves email info note tags the new entry with :NOTE: respond marks new entry with NEXT and adds a SCHEDULED property journal creates a timestamped entry in diary.</description>
+    </item>
+    <item>
+      <title>Using Spacemacs As A File Manager</title>
+      <link>http://localhost:1313/posts/filemanagement/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/filemanagement/index.html</guid>
+      <description>Treemacs SPC p t Side panel file tree&#xA;dired C-x d</description>
+    </item>
+    <item>
+      <title>YAS snippets</title>
+      <link>http://localhost:1313/posts/yas-snippets/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/yas-snippets/index.html</guid>
+      <description>git clone https://github.com/atotto/yasnippet-golang.git&#xA;Function Description yas-reload-all Reload all snippets Shortcuts Table 1: Shortcut keys for development Keys Description mod / autocomplete org mode snippets sb source block&#xA;yay -S nix systemctl enable nix-daemon.service gpasswd -a enielson nix-usersnix-channel --add https://nixos.org/channels/nixpkgs-unstable nix-channel --update</description>
+    </item>
+  </channel>
+</rss>

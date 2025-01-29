@@ -1,0 +1,102 @@
+<!doctype html><html lang=en-us dir=ltr><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="https://out-of-cheese-error.netlify.app/spacemacs-config
+Multiple init files # (defun dotspacemacs/user-config () (load &#34;/home/enielson/.config/emacs/config.el&#34;) (enielson/config) (message &#34;user-config complete&#34;) ) Customizing Startup Buffer # All of the code for this is stored in .emacs.d/core/core-spacemacs-buffer.el. The function names all make sense, and are in plain English, so skim through and find what you want to change. I want to get rid of the footer.
+Core # Keys Function Description SPC c k kill-compilation Kill current compilation SPC SPC M-x equivalent SPC h d v Find a variables value and purpose SPC h d k Find a key bindings function and purpose Searching TEST # Keys Function Description * Highlight symbol in buffer (transient) SPC s p search for string in all files SPC / search for string in all files SPC s P search for object at point in all files SPC * search for object at point in all files SPC p f find a file in project Global Search and Replace # Perform a search using helm (e."><meta name=theme-color content="#FFFFFF"><meta name=color-scheme content="light dark"><meta property="og:title" content="1 - Spacemacs"><meta property="og:description" content="https://out-of-cheese-error.netlify.app/spacemacs-config
+Multiple init files # (defun dotspacemacs/user-config () (load &#34;/home/enielson/.config/emacs/config.el&#34;) (enielson/config) (message &#34;user-config complete&#34;) ) Customizing Startup Buffer # All of the code for this is stored in .emacs.d/core/core-spacemacs-buffer.el. The function names all make sense, and are in plain English, so skim through and find what you want to change. I want to get rid of the footer.
+Core # Keys Function Description SPC c k kill-compilation Kill current compilation SPC SPC M-x equivalent SPC h d v Find a variables value and purpose SPC h d k Find a key bindings function and purpose Searching TEST # Keys Function Description * Highlight symbol in buffer (transient) SPC s p search for string in all files SPC / search for string in all files SPC s P search for object at point in all files SPC * search for object at point in all files SPC p f find a file in project Global Search and Replace # Perform a search using helm (e."><meta property="og:type" content="article"><meta property="og:url" content="http://example.org/docs/spacemacs/"><meta property="article:section" content="docs"><title>1 - Spacemacs | Spacemacs</title>
+<link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.33a48f5432973b8ff9a82679d9e45d67f2c15d4399bd2829269455cfe390b5e8.css integrity="sha256-M6SPVDKXO4/5qCZ52eRdZ/LBXUOZvSgpJpRVz+OQteg=" crossorigin=anonymous><script defer src=/flexsearch.min.js></script><script defer src=/en.search.min.ee0cf334cb238b761534aecac74d0e3b590be4a0da3f9dedeb3e8f05316680e9.js integrity="sha256-7gzzNMsji3YVNK7Kx00OO1kL5KDaP53t6z6PBTFmgOk=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/><span>Spacemacs</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul><li><a href=/docs/spacemacs/ class=active>1 - Spacemacs</a></li><li><a href=/docs/spacemacs-development/>2 - Developing in Spacemacs</a></li><li><a href=/docs/elisp/>Elisp</a></li><li><a href=/docs/magit/>Git & Magit</a></li><li><a href=/docs/spacemacs-go/>Golang + Spacemacs</a></li><li><a href=/docs/hugo/>Hugo</a></li><li><a href=/docs/layouts/>Layouts, Perspectives & Projects</a></li><li><a href=/docs/ranger/>Ranger</a></li><li><a href=/docs/keys/>Shortcut Keys</a></li><li><a href=/docs/dpi/>Spacemacs Email</a></li><li><a href=/docs/spacemacs-email/>Spacemacs Email</a></li><li><a href=/docs/spacemacs-gpt/>Spacemacs GPT</a></li><li><a href=/docs/spacemacs-org/>Spacemacs Org Mode</a></li><li><a href=/docs/filemanagement/>Using Spacemacs As A File Manager</a></li><li><a href=/docs/yas-snippets/>YAS snippets</a></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu>
+</label><strong>1 - Spacemacs</strong>
+<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#multiple-init-files>Multiple init files</a></li><li><a href=#customizing-startup-buffer>Customizing Startup Buffer</a></li><li><a href=#core>Core</a><ul><li><a href=#searching>Searching TEST</a></li><li><a href=#buffer-management>Buffer Management</a></li></ul></li><li><a href=#new>New</a><ul><li></li><li><a href=#narrowing>Narrowing</a></li></ul></li><li><a href=#other>Other</a></li><li><a href=#running-elisp>Running elisp</a></li></ul></nav></aside></header><article class=markdown><p><a href=https://out-of-cheese-error.netlify.app/spacemacs-config>https://out-of-cheese-error.netlify.app/spacemacs-config</a></p><h2 id=multiple-init-files>Multiple init files
+<a class=anchor href=#multiple-init-files>#</a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-elisp data-lang=elisp><span style=display:flex><span>  (defun dotspacemacs/user-config ()
+</span></span><span style=display:flex><span>  (<span style=color:#a6e22e>load</span> <span style=color:#e6db74>&#34;/home/enielson/.config/emacs/config.el&#34;</span>)
+</span></span><span style=display:flex><span>  (enielson/config)
+</span></span><span style=display:flex><span>  (<span style=color:#a6e22e>message</span> <span style=color:#e6db74>&#34;user-config complete&#34;</span>)
+</span></span><span style=display:flex><span>)
+</span></span></code></pre></div><h2 id=customizing-startup-buffer>Customizing Startup Buffer
+<a class=anchor href=#customizing-startup-buffer>#</a></h2><p>All of the code for this is stored in .emacs.d/core/core-spacemacs-buffer.el.
+The function names all make sense, and are in plain English, so skim through
+and find what you want to change. I want to get rid of the footer.</p><h2 id=core>Core
+<a class=anchor href=#core>#</a></h2><table><thead><tr><th>Keys</th><th>Function</th><th>Description</th></tr></thead><tbody><tr><td>SPC c k</td><td>kill-compilation</td><td>Kill current compilation</td></tr><tr><td>SPC SPC</td><td></td><td>M-x equivalent</td></tr><tr><td>SPC h d v</td><td></td><td>Find a variables value and purpose</td></tr><tr><td>SPC h d k</td><td></td><td>Find a key bindings function and purpose</td></tr></tbody></table><h3 id=searching>Searching TEST
+<a class=anchor href=#searching>#</a></h3><table><thead><tr><th>Keys</th><th>Function</th><th>Description</th></tr></thead><tbody><tr><td>*</td><td></td><td>Highlight symbol in buffer (transient)</td></tr><tr><td>SPC s p</td><td></td><td>search for string in all files</td></tr><tr><td>SPC /</td><td></td><td>search for string in all files</td></tr><tr><td>SPC s P</td><td></td><td>search for object at point in all files</td></tr><tr><td>SPC *</td><td></td><td>search for object at point in all files</td></tr><tr><td>SPC p f</td><td></td><td>find a file in project</td></tr></tbody></table><h4 id=global-search-and-replace>Global Search and Replace
+<a class=anchor href=#global-search-and-replace>#</a></h4><p>Perform a search using helm (e.g. SPC s p) and then use C-c C-e to open a new buffer with all matching lines from all files.
+This buffer can be edited like any other and when saved, emacs updates each line accordingly in each file.</p><table><thead><tr><th>Keys</th><th>Function</th><th>Description</th></tr></thead><tbody><tr><td>C-c C-e</td><td></td><td>Open a new buffer with only matching lines. Can search and replace here</td></tr></tbody></table><h3 id=buffer-management>Buffer Management
+<a class=anchor href=#buffer-management>#</a></h3><p>ibuffer for buffer management</p><h2 id=new>New
+<a class=anchor href=#new>#</a></h2><h4 id=symbol-overlay>Symbol Overlay
+<a class=anchor href=#symbol-overlay>#</a></h4><p>Highlight (overlay) symbols and keep them highlighted. Able to overlay
+multiple symbols, replace symbols, jump between instances and switch focused
+symbol.</p><table><thead><tr><th>Keys</th><th>Function</th><th>Description</th></tr></thead><tbody><tr><td>SPC s o</td><td></td><td>Overlay symbol at point</td></tr><tr><td>SPC s o r</td><td></td><td>Replace overlaid symbol, use y/n after this</td></tr><tr><td>SPC s O</td><td></td><td>Unoverlay all symbols</td></tr></tbody></table><h3 id=narrowing>Narrowing
+<a class=anchor href=#narrowing>#</a></h3><p>You can limit the buffer to only display a specific portion of the file.
+All searches and edits will only affect the narrowed portion.</p><table><thead><tr><th>Keys</th><th>Function</th><th>Description</th></tr></thead><tbody><tr><td>SPC n f</td><td></td><td>narrow the buffer to the current function</td></tr><tr><td>SPC n p</td><td></td><td>narrow the buffer to the visible page</td></tr><tr><td>SPC n r</td><td></td><td>narrow the buffer to the selected region</td></tr><tr><td>SPC n w</td><td></td><td>widen, i.e show the whole buffer again</td></tr></tbody></table><h2 id=other>Other
+<a class=anchor href=#other>#</a></h2><table><thead><tr><th>Keys</th><th>Function</th><th>Description</th></tr></thead><tbody><tr><td>SPC h d k</td><td>describe-key</td><td>Find command bound to given key sequence</td></tr><tr><td>&lt;F1> w</td><td>where-is</td><td>Find key for command</td></tr><tr><td>-</td><td>deer</td><td>Quick switch to deer in current directory</td></tr></tbody></table><table><thead><tr><th>Keys</th><th>Function</th><th>Description</th></tr></thead><tbody><tr><td>SPC w p m</td><td>popwin:messages</td><td>Open messages window</td></tr></tbody></table><table><thead><tr><th>Keys</th><th>Function</th><th>Description</th></tr></thead><tbody><tr><td>SPC f R</td><td></td><td>Rename current file</td></tr></tbody></table><h2 id=running-elisp>Running elisp
+<a class=anchor href=#running-elisp>#</a></h2><p>Select a region of code and run</p><p></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-elisp data-lang=elisp><span style=display:flex><span><span style=color:#f92672>,</span> e r
+</span></span></code></pre></div><p>SPC x o open link</p><p>C-c . style modes</p><p>SPC p l create project layout
+SPC p t neotree
+SPC p p switch project
+SPC p b buffers in project</p><p>SPC e n next error
+SPC e p previous error</p><p>SPC l l change/create layout
+SPC l o custom layouts
+SPC l a add buffer to layout
+SPC l b layout buffers
+SPC l TAB previous layout
+SPC l s/L save/Load layouts</p><p>SPC k p paste
+SPC a u undo tree visualize</p><p>SPC f s save buffer
+SPC f
+SPC s p search files in project
+SPC p f find file in project
+SPC b b buffer navigate
+SPC &rsquo; shell</p><p>SPC f e d edit .spacemacs
+SPC f e R reload .spacemacs</p><p>SPC j i jump to definition in buffer
+SPC j I jump to definition in any buffer</p><p>M x Runs commands
+&ndash; eshell
+&ndash; rename-buffer</p><p>F3 to save helm search results</p><p>MARKDOWN:</p><p>SPC m c r Render</p><p>HELM:</p><p>C-n C-p next/prev line</p><p>ORG:</p><p>SPC p o TODOs for current project
+t toggle status of todo items
+T insert todo heading
+SPC m l open at point. for links
+SPC m h s make header subheader
+SPC m h i make header insert below
+SPC m h I make header insert above</p><p>Use *s for indent level</p><p>SPC b Y</p><p>GIT:</p><p>SPC g > show submodule prompt
+SPC g b open a magit blame
+SPC g f h show file commits history
+SPC g H c clear highlights
+SPC g H h highlight regions by age of commits
+SPC g H t highlight regions by last updated time
+SPC g I open helm-gitignore
+SPC g s open a magit status window
+SPC g S stage current file
+SPC g m magit dispatch popup
+SPC g M display the last commit message of the current line
+SPC g t launch the git time machine
+SPC g U unstage current file</p><p>/ evil-search
+$ open command output buffer
+c c open a commit message buffer
+b b checkout a branch
+b c create a branch
+f f fetch changes
+F (r) u pull tracked branch and rebase
+gr refresh
+j goto next magit section
+C-j next visual line
+k goto previous magit section
+C-k previous visual line
+l l open log buffer
+n next search occurrence
+N previous search occurrence
+o revert item at point
+P u push to tracked branch
+P m push to matching branch (e.g., upstream/develop to origin/develop)
+q quit
+s on a file or hunk in a diff: stage the file or hunk
+x discard changes</p><ul><li>on a hunk: increase hunk size</li><li>on a hunk: decrease hunk size</li></ul><p>S stage all
+TAB on a file: expand/collapse diff
+u on a staged file: unstage
+U unstage all staged files
+v or V select multiple lines
+y magic-refs (show branches)
+z z stash changes</p><p>M-x list packages. i to mark, x to execute mark</p><p>SPC b M move buffer to another window
+SPC b m kill all other buffers
+SPC m e b eval buffer
+SPC m s send to REPL</p><p>SPC m d f set breakpoint in function
+SPC m e s eval current symbol</p><p>SPC i s insert snippet
+M-x <strong>snippet</strong> for other functions. by region.
+, g u find reference</p><p>SPC c k kill compilation</p><p>(setq-default spacemacs-show-trailing-whitespace nil)
+(setq spacemacs-show-trailing-whitespace nil)</p></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#multiple-init-files>Multiple init files</a></li><li><a href=#customizing-startup-buffer>Customizing Startup Buffer</a></li><li><a href=#core>Core</a><ul><li><a href=#searching>Searching TEST</a></li><li><a href=#buffer-management>Buffer Management</a></li></ul></li><li><a href=#new>New</a><ul><li></li><li><a href=#narrowing>Narrowing</a></li></ul></li><li><a href=#other>Other</a></li><li><a href=#running-elisp>Running elisp</a></li></ul></nav></div></aside></main></body></html>

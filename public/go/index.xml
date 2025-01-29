@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Go :: Spacemacs</title>
+    <link>http://localhost:1313/go/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Save Hook</title>
+      <link>http://localhost:1313/go/spacemacs-go/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/go/spacemacs-go/index.html</guid>
+      <description>Link Golang Workflow on Youtube Shortcuts Keys Function Description , t t run current test , t p run all tests in file , t g f generate tests for exported functions , t g F generate tests for all functions , r r lsp-rename Renames object , h h godoc-at-point K evil-smart-doc-lookup, seems to call godoc-at-point in go-mode Save Hook Running lsp-format-buffer and lsp-organize-imports are two functions that you’ll want to run so often they should be save hooks.</description>
+    </item>
+  </channel>
+</rss>

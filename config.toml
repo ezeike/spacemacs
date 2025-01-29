@@ -1,0 +1,15 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Spacemacs'
+# theme = 'book'
+theme = 'hugo-theme-relearn'
+
+tableOfContents = true
+pluralizeListTitles = false
+
+[params]
+BookTheme = 'dark'
+
+[markup.goldmark.renderer]
+  unsafe = true
+

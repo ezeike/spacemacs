@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Configuration :: Spacemacs</title>
+    <link>http://localhost:1313/configuration/index.html</link>
+    <description>This is a new chapter.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/configuration/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>General</title>
+      <link>http://localhost:1313/configuration/config/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/configuration/config/index.html</guid>
+      <description>Custom spacemacs config begins here. Modify your .spacemacs as shown below. This will load the elisp code in a file called config.el and then execute the function enielson/config. This function will load and execute the rest of the configuration.&#xA;This approach minimizes the changes to your .spacemacs file.&#xA;(defun dotspacemacs/user-config () (load &#34;/home/enielson/.config/home-manager/emacs/config.el&#34;) (enielson/config) (message &#34;user-config complete&#34;)) Code Snippet 1: .spacemacs configuration file The configuration entry point in config.el:&#xA;(defun enielson/config () (interactive) (message &#34;Executing enielson/config&#34;) (load &#34;/home/enielson/.</description>
+    </item>
+  </channel>
+</rss>

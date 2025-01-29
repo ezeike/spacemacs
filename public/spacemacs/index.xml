@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Spacemacs</title>
+    <link>http://localhost:1313/spacemacs/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/spacemacs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Save Hook</title>
+      <link>http://localhost:1313/spacemacs/go/spacemacs-go/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/spacemacs/go/spacemacs-go/index.html</guid>
+      <description>Running lsp-format-buffer and lsp-organize-imports are two functions that you’ll want to run so often they should be save hooks.&#xA;These not only format your code and organize your imports, imports are automatically added and removed as necessary.&#xA;Use the before-save-hook,&#xA;(add-hook &#39;before-save-hook &#39;enielson-before-save-hook)&#xA;(defun enielson-before-save-hook () (when (string-match &#34;.go\\&#39;&#34; buffer-file-name) (lsp-format-buffer) (lsp-organize-imports)))</description>
+    </item>
+    <item>
+      <title>Shortcuts</title>
+      <link>http://localhost:1313/spacemacs/go/go-shortcuts/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/spacemacs/go/go-shortcuts/index.html</guid>
+      <description>Keys Function Description , t t run current test , t p run all tests in file , t g f generate tests for exported functions , t g F generate tests for all functions , r r lsp-rename Renames object , h h godoc-at-point K evil-smart-doc-lookup, seems to call godoc-at-point in go-mode</description>
+    </item>
+    <item>
+      <title>Workflow</title>
+      <link>http://localhost:1313/spacemacs/go/go-workflow/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/spacemacs/go/go-workflow/index.html</guid>
+      <description>Link Golang Workflow on Youtube</description>
+    </item>
+  </channel>
+</rss>

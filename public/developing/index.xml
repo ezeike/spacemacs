@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Developing :: Spacemacs</title>
+    <link>http://localhost:1313/developing/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/developing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Developing in Spacemacs</title>
+      <link>http://localhost:1313/developing/spacemacs-development/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/developing/spacemacs-development/index.html</guid>
+      <description>Diffing Table 1: Shortcut keys Diffing Keys Description M-0 toggle focus treemacs SPC f t toggle treemacs visibility SPC p t toggle treemacs project visibility SPC p a switch between file and test file Shortcuts Table 2: Shortcut keys for development Keys Description M-0 toggle focus treemacs SPC f t toggle treemacs visibility SPC p t toggle treemacs project visibility SPC p a switch between file and test file Extra Treemacs Binding Description M-0 Selected the treemacs window.</description>
+    </item>
+  </channel>
+</rss>

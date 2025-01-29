@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Layouts :: Spacemacs</title>
+    <link>http://localhost:1313/layouts/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/layouts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Layouts, Perspectives &amp; Projects</title>
+      <link>http://localhost:1313/layouts/layouts/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/layouts/layouts/index.html</guid>
+      <description>Definitions A layout in Spacemacs is a sub-set of open buffers. It is convenient to use one layout per project. If you do this then you can think of layouts as “project layouts”. A workspace is an arrangement of some number of buffers within a layout. You can think of workspaces as “views into projects”. For example, a workspace is a specific set of buffers related to a task or area of the project.</description>
+    </item>
+  </channel>
+</rss>

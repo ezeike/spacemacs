@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Magit :: Spacemacs</title>
+    <link>http://localhost:1313/magit/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/magit/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shortcuts</title>
+      <link>http://localhost:1313/magit/git-shortcuts/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/magit/git-shortcuts/index.html</guid>
+      <description>Shortcuts Table 1: Magit Shortcuts Keys Function Description SPC g s d d Diff between local and remote (type master in prompt) SPC g s b x Delete a branch SPC g b Git blame Git blame Table 2: Other shortcuts Keys Function Description d d On a commit views changes</description>
+    </item>
+  </channel>
+</rss>

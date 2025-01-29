@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Org :: Spacemacs</title>
+    <link>http://localhost:1313/org/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spacemacs Org Mode</title>
+      <link>http://localhost:1313/org/spacemacs-org/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/org/spacemacs-org/index.html</guid>
+      <description>Links:&#xA;https://web.archive.org/web/20210122070120/http://ehneilsen.net/notebook/orgExamples/org-examples.html#sec-2&#xA;https://zzamboni.org/post/beautifying-org-mode-in-emacs/&#xA;https://howardism.org/Technical/Emacs/orgmode-wordprocessor.html&#xA;Using mu4e with org mode https://www.djcbsoftware.nl/code/mu/mu4e/Org_002dmode-links.html&#xA;Can use SPC a o l to capture email link C-c c has been bound to mu4e-org-store-and-capture. Use it on headers or in an email New template has been added to create a todo from an email Capturing Use org-capture to capture something, it will go into refile.org todo marks the new entry with TODO todo from email marks the new entry with TODO and saves email info note tags the new entry with :NOTE: respond marks new entry with NEXT and adds a SCHEDULED property journal creates a timestamped entry in diary.</description>
+    </item>
+  </channel>
+</rss>
